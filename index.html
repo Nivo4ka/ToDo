@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_info">
+                <p class="logo">ToDo</p>
+                <div class="header_text">
+                    <p>До конца дня осталось :</p>
+
+                    <div id="countdown" class="countdown">
+                        <div class="countdown-number">
+                            <span class="hours countdown-time"></span>
+                            <p class="countdown-text">Hours</p>
+                        </div>
+                        <div class="countdown-number">
+                            <span class="minutes countdown-time"></span>
+                            <p class="countdown-text">Minutes</p>
+                        </div>
+                        <div class="countdown-number">
+                            <span class="seconds countdown-time"></span>
+                            <p class="countdown-text">Seconds</p>
+                        </div>
+                    </div>
+
+                    <p>Успей всё!</p>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="main">
+
+        <div class="container">
+            <div class="main_sort">
+                <img class="main_list_tasks_item_2" src="pictures/conversion.png">
+
+            </div>
+            <div class="main_grid">
+                <div class="main_list">
+                    <ul class="main_list_tasks">
+                    </ul>
+                    <form class="main_input" id="add-form" name="input">
+                        <input type="text" class="main_input_text" placeholder="Добавить задачу" name="addTodoInput" />
+                        <div class="form_toggle">
+                            <div class="form_toggle-item item-1">
+                                <input id="red" type="radio" name="color" value="red">
+                                <label for="red">.</label>
+                            </div>
+                            <div class="form_toggle-item item-2">
+                                <input id="yellow" type="radio" name="color" value="yellow">
+                                <label for="yellow">.</label>
+                            </div>
+                            <div class="form_toggle-item item-3">
+                                <input id="green" type="radio" name="color" value="green" checked>
+                                <label for="green">.</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main_delete_all">
+                <img class="main_list_tasks_item_2" src="pictures/delete-all.png">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_text">
+                    <h3 class="footer_title">Деревянко Олеся</h3>
+                    <p>(с) 2021. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./script.js" />
+</body>
+
+</html>
