@@ -44,8 +44,15 @@
 
         <div class="container">
             <div class="main_sort">
-                <img class="main_list_tasks_item_2" src="pictures/conversion.png">
-
+                <div class="main_sort_items">
+                    <div class="main_sort_list">
+                        <a class="all-todos" href="#">Все записи</a>
+                        <a class="active-todos" href="#">Невыполненные записи</a>
+                        <a class="complited-todos" href="#">Выполненные записи</a>
+                    </div>
+                    <img title="Сортировать записи" class="sort main_list_tasks_item_2" src="pictures/conversion.png"
+                        id="sort_item">
+                </div>
             </div>
             <div class="main_grid">
                 <div class="main_list">
@@ -54,15 +61,15 @@
                     <form class="main_input" id="add-form" name="input">
                         <input type="text" class="main_input_text" placeholder="Добавить задачу" name="addTodoInput" />
                         <div class="form_toggle">
-                            <div class="form_toggle-item item-1">
+                            <div class="form_toggle-item item-1" title="Очень важно">
                                 <input id="red" type="radio" name="color" value="red">
                                 <label for="red">.</label>
                             </div>
-                            <div class="form_toggle-item item-2">
+                            <div class="form_toggle-item item-2" title="Важно">
                                 <input id="yellow" type="radio" name="color" value="yellow">
                                 <label for="yellow">.</label>
                             </div>
-                            <div class="form_toggle-item item-3">
+                            <div class="form_toggle-item item-3" title="Второстепенная важность">
                                 <input id="green" type="radio" name="color" value="green" checked>
                                 <label for="green">.</label>
                             </div>
@@ -71,7 +78,8 @@
                 </div>
             </div>
             <div class="main_delete_all">
-                <img class="main_list_tasks_item_2" src="pictures/delete-all.png">
+                <img name="delete_all" title="Удалить все записи" class="delete main_list_tasks_item_2"
+                    src="pictures/delete-all.png">
             </div>
         </div>
 
